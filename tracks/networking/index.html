@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Networking for Web track roadmap with levels, outcomes, resources, and FAQs." />
+    <title>Networking Track | HU Cybersecurity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      integrity="sha384-hsuS/fWznuaCG2lLBVmOAXoJ1i8LJIYurx8WcN6i/K3PaY5E9O+V1YxDCEV4VpWw"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <a class="text-lg font-semibold tracking-wide" href="/">HU Cybersecurity</a>
+          <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a class="hover:text-cyan-300 transition" href="/tracks/index.html">Tracks</a>
+            <a class="hover:text-cyan-300 transition" href="/capstone/index.html">Capstone</a>
+            <a class="hover:text-cyan-300 transition" href="/ethics/index.html">Ethics</a>
+            <a class="hover:text-cyan-300 transition" href="/rubrics/index.html">Rubrics</a>
+            <a class="hover:text-cyan-300 transition" href="/submit/index.html">Submit</a>
+            <a class="hover:text-cyan-300 transition" href="/about/index.html">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="border-b border-slate-800 bg-slate-900/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <p class="text-sm uppercase tracking-wide text-cyan-300">Track</p>
+          <h1 class="mt-3 text-4xl font-bold text-white">Networking for Web</h1>
+          <p class="mt-4 max-w-3xl text-lg text-slate-300">
+            Translate packets to pentests. Build a strong foundation in how browsers, proxies, and servers communicate so you can recognize anomalies and exploitation opportunities.
+          </p>
+        </div>
+      </section>
+
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="text-3xl font-semibold text-white">Levels &amp; outcomes</h2>
+          <div class="mt-10 grid gap-8 lg:grid-cols-3">
+            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <header class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Level 1</h3>
+                <span class="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-300">Foundation</span>
+              </header>
+              <p class="mt-3 text-sm text-slate-300">Master HTTP requests, status codes, headers, cookies, and TLS basics.</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                <li>Lesson: <a class="text-cyan-300 hover:text-cyan-200" href="/lesson/networking/l1/http-basics/index.html">HTTP Basics</a></li>
+                <li>Lesson: <a class="text-cyan-300 hover:text-cyan-200" href="/lesson/networking/l1/burp-proxy-intro/index.html">Burp Proxy Intro</a></li>
+                <li>Lab: <a class="text-cyan-300 hover:text-cyan-200" href="/lab/networking/l1/http-basics/index.html">Capture &amp; Replay</a></li>
+                <li>Quiz: <a class="text-cyan-300 hover:text-cyan-200" href="/quiz/networking/l1/index.html">Networking L1 quiz</a></li>
+              </ul>
+            </article>
+            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <header class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Level 2</h3>
+                <span class="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-300">Intermediate</span>
+              </header>
+              <p class="mt-3 text-sm text-slate-300">Pivot from packet capture to analysis. Study CORS, redirects, and rate limiting strategies.</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                <li>Lesson: Nmap fingerprinting workflow</li>
+                <li>Lab: Wireshark request trace</li>
+                <li>Lesson: CORS misconfig overview</li>
+                <li>Quiz: End-of-level scenario quiz</li>
+              </ul>
+            </article>
+            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <header class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Level 3</h3>
+                <span class="rounded-full bg-purple-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-purple-300">Advanced</span>
+              </header>
+              <p class="mt-3 text-sm text-slate-300">Combine reconnaissance, exploitation, and responsible disclosure in capstone-ready engagements.</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                <li>Scenario lab: Recon → exploit chain</li>
+                <li>Case study: HTTP request smuggling</li>
+                <li>Template: Disclosure email walkthrough</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-slate-800 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="text-3xl font-semibold text-white">Resources</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-3 text-sm text-slate-300">
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <h3 class="text-lg font-semibold text-white">Downloads</h3>
+              <ul class="mt-3 space-y-2">
+                <li><a class="text-cyan-300 hover:text-cyan-200" href="https://portswigger.net/web-security" rel="noreferrer">PortSwigger Academy</a></li>
+                <li><a class="text-cyan-300 hover:text-cyan-200" href="https://developer.mozilla.org/en-US/docs/Web/HTTP" rel="noreferrer">MDN HTTP Guides</a></li>
+                <li><a class="text-cyan-300 hover:text-cyan-200" href="https://httparchive.org/reports/state-of-the-web" rel="noreferrer">HTTP Archive</a></li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <h3 class="text-lg font-semibold text-white">Cheat sheets</h3>
+              <ul class="mt-3 space-y-2">
+                <li>HTTP status code matrix (PDF)</li>
+                <li>TLS handshake flow diagram</li>
+                <li>Common header quick reference</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <h3 class="text-lg font-semibold text-white">FAQ</h3>
+              <ul class="mt-3 space-y-2">
+                <li>Can I practice without Kali? Yes, browser + Burp works for Level 1.</li>
+                <li>Do I need Wireshark? Strongly recommended for Level 2+.</li>
+                <li>How do I get feedback? Submit artifacts via <a class="text-cyan-300 hover:text-cyan-200" href="/submit/index.html">Submit page</a>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="text-3xl font-semibold text-white">Next steps</h2>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="inline-flex items-center justify-center rounded-lg bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 hover:bg-cyan-400" href="/lesson/networking/l1/http-basics/index.html">Start first lesson</a>
+            <a class="inline-flex items-center justify-center rounded-lg border border-cyan-500/60 px-5 py-3 text-sm font-semibold text-cyan-200 hover:bg-cyan-500/10" href="/quiz/networking/l1/index.html">Preview quiz</a>
+            <a class="inline-flex items-center justify-center rounded-lg border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-200 hover:bg-slate-800" href="/tracks/index.html">Back to tracks</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500">
+        <p>© <span id="current-year"></span> HU Cybersecurity Community — University of Hebron</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kali Linux & Tools track roadmap with toolchain outcomes, resources, and FAQs." />
+    <title>Kali Tools Track | HU Cybersecurity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      integrity="sha384-hsuS/fWznuaCG2lLBVmOAXoJ1i8LJIYurx8WcN6i/K3PaY5E9O+V1YxDCEV4VpWw"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <a class="text-lg font-semibold tracking-wide" href="/">HU Cybersecurity</a>
+          <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a class="hover:text-cyan-300 transition" href="/tracks/index.html">Tracks</a>
+            <a class="hover:text-cyan-300 transition" href="/capstone/index.html">Capstone</a>
+            <a class="hover:text-cyan-300 transition" href="/ethics/index.html">Ethics</a>
+            <a class="hover:text-cyan-300 transition" href="/rubrics/index.html">Rubrics</a>
+            <a class="hover:text-cyan-300 transition" href="/submit/index.html">Submit</a>
+            <a class="hover:text-cyan-300 transition" href="/about/index.html">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="border-b border-slate-800 bg-slate-900/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <p class="text-sm uppercase tracking-wide text-cyan-300">Track</p>
+          <h1 class="mt-3 text-4xl font-bold text-white">Kali Linux &amp; Tools</h1>
+          <p class="mt-4 max-w-3xl text-lg text-slate-300">
+            Learn the everyday toolkit of a web pentester. Configure Kali, streamline Burp Suite workflows, and chain CLI tools without needing to code.
+          </p>
+        </div>
+      </section>
+
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="text-3xl font-semibold text-white">Levels &amp; outcomes</h2>
+          <div class="mt-10 grid gap-8 lg:grid-cols-3">
+            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <header class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Level 1</h3>
+                <span class="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-300">Setup</span>
+              </header>
+              <p class="mt-3 text-sm text-slate-300">Install Kali, use the terminal confidently, and capture traffic with Burp &amp; browser extensions.</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                <li>Lesson: Kali onboarding checklist</li>
+                <li>Lab: Enumerate with Nmap + FFUF</li>
+                <li>Lesson: Burp Repeater reps</li>
+                <li>Quiz: Tool identification &amp; use</li>
+              </ul>
+            </article>
+            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <header class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Level 2</h3>
+                <span class="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-300">Workflow</span>
+              </header>
+              <p class="mt-3 text-sm text-slate-300">Automate repetitive actions with Intruder, SQLmap assist, and tool chaining for CSRF verification.</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                <li>Lesson: Intruder payload design</li>
+                <li>Lab: SQLmap safe practice</li>
+                <li>Lesson: Token workflows</li>
+                <li>Quiz: Toolchain sequencing</li>
+              </ul>
+            </article>
+            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <header class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Level 3</h3>
+                <span class="rounded-full bg-purple-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-purple-300">Advanced</span>
+              </header>
+              <p class="mt-3 text-sm text-slate-300">Leverage macros, evasions, and log analysis to sustain longer engagements and produce exportable evidence.</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                <li>Lesson: Burp macros &amp; sessions</li>
+                <li>Lab: WAF evasion drills</li>
+                <li>Lesson: Forensic log parsing</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-slate-800 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="text-3xl font-semibold text-white">Resources</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-3 text-sm text-slate-300">
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <h3 class="text-lg font-semibold text-white">Downloads</h3>
+              <ul class="mt-3 space-y-2">
+                <li><a class="text-cyan-300 hover:text-cyan-200" href="https://www.kali.org/docs" rel="noreferrer">Kali docs</a></li>
+                <li><a class="text-cyan-300 hover:text-cyan-200" href="https://portswigger.net/burp/documentation" rel="noreferrer">Burp Suite docs</a></li>
+                <li><a class="text-cyan-300 hover:text-cyan-200" href="https://book.hacktricks.xyz/" rel="noreferrer">HackTricks</a></li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <h3 class="text-lg font-semibold text-white">Cheat sheets</h3>
+              <ul class="mt-3 space-y-2">
+                <li>Burp hotkeys quick ref</li>
+                <li>FFUF wordlist strategy</li>
+                <li>Toolchain planning canvas</li>
+              </ul>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+              <h3 class="text-lg font-semibold text-white">FAQ</h3>
+              <ul class="mt-3 space-y-2">
+                <li>Can I use Windows? Yes, via WSL or virtualized Kali.</li>
+                <li>How much automation? Focus on semi-automation, not full scripting.</li>
+                <li>What reports are needed? Export tool logs and attach to submissions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="text-3xl font-semibold text-white">Next steps</h2>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="inline-flex items-center justify-center rounded-lg bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/30 hover:bg-cyan-400" href="/tracks/index.html">Return to tracks</a>
+            <a class="inline-flex items-center justify-center rounded-lg border border-cyan-500/60 px-5 py-3 text-sm font-semibold text-cyan-200 hover:bg-cyan-500/10" href="/submit/index.html">Plan submissions</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500">
+        <p>© <span id="current-year"></span> HU Cybersecurity Community — University of Hebron</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

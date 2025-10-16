@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Capstone brief, rubric, and submission guidance for HU Cybersecurity Web Academy." />
+    <title>Capstone | HU Cybersecurity Web Academy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      integrity="sha384-hsuS/fWznuaCG2lLBVmOAXoJ1i8LJIYurx8WcN6i/K3PaY5E9O+V1YxDCEV4VpWw"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <a class="text-lg font-semibold tracking-wide" href="/">HU Cybersecurity</a>
+          <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a class="hover:text-cyan-300 transition" href="/tracks/index.html">Tracks</a>
+            <a class="hover:text-cyan-300 transition" href="/rubrics/index.html">Rubrics</a>
+            <a class="hover:text-cyan-300 transition" href="/submit/index.html">Submit</a>
+            <a class="hover:text-cyan-300 transition" href="/ethics/index.html">Ethics</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <header>
+        <p class="text-xs uppercase tracking-wide text-cyan-300">Capstone Project</p>
+        <h1 class="mt-3 text-4xl font-bold text-white">Capstone Brief &amp; Templates</h1>
+        <p class="mt-4 text-lg text-slate-300">
+          Deliver a professional web penetration test report on a provided vulnerable application. Demonstrate methodology, ethical considerations, and clear remediation guidance.
+        </p>
+      </header>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Scenario &amp; Scope</h2>
+        <div class="mt-4 grid gap-6 md:grid-cols-2 text-sm text-slate-300">
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Target</h3>
+            <ul class="mt-3 space-y-2">
+              <li>URL: https://academy-capstone.hebron.edu</li>
+              <li>Environment: Dedicated training VM (no real data)</li>
+              <li>Credentials: Provided by mentor (read-only)</li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Rules of engagement</h3>
+            <ul class="mt-3 space-y-2">
+              <li>Testing window: 72 hours</li>
+              <li>No destructive payloads (DoS, brute force)</li>
+              <li>Follow <a class="text-cyan-300 hover:text-cyan-200" href="/ethics/index.html">Ethics policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Deliverables</h2>
+        <ul class="mt-4 space-y-3 text-sm text-slate-300">
+          <li>Completed capstone report (PDF) using provided template.</li>
+          <li>Evidence folder (screenshots, requests/responses).</li>
+          <li>Timeline summary with hours spent and key milestones.</li>
+        </ul>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Rubric (100 pts · pass 80)</h2>
+        <div class="mt-4 grid gap-4 md:grid-cols-2 text-sm text-slate-300">
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Recon &amp; Scope · 15 pts</h3>
+            <p class="mt-2 text-slate-300">Clear target description, asset inventory, and documented limitations.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Vulnerability discovery · 20 pts</h3>
+            <p class="mt-2 text-slate-300">Multiple validated findings mapped to OWASP Top 10 or equivalent risks.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">PoC &amp; Exploitation · 25 pts</h3>
+            <p class="mt-2 text-slate-300">Detailed steps, payloads, and evidence supporting each finding.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Report structure · 20 pts</h3>
+            <p class="mt-2 text-slate-300">Professional formatting, executive summary, and prioritized remediation.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Ethics &amp; Disclosure · 10 pts</h3>
+            <p class="mt-2 text-slate-300">Adherence to responsible disclosure guidelines and communication plan.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold text-white">Supporting materials · 10 pts</h3>
+            <p class="mt-2 text-slate-300">Complete attachments and reproducible artefacts.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Templates</h2>
+        <div class="mt-4 space-y-4">
+          <details class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 text-sm text-slate-200">
+            <summary class="cursor-pointer text-lg font-semibold text-white">Capstone Report Template (Markdown)</summary>
+            <pre class="mt-4 overflow-x-auto rounded-2xl bg-slate-950/80 p-4 text-xs text-slate-200 whitespace-pre-wrap"># Capstone Report — HU Cybersecurity
+**Student:**
+**Email / Contact:**
+**Date:**
+**Lab Name / URL:**
+**Time Spent:**
+---
+## 1) Scope & Recon
+- Target URL/IP:
+- Tools used:
+- Summary of recon (commands & results):
+## 2) Finding(s)
+- Finding #1: [Title]
+- Description:
+- Affected endpoint(s):
+- Evidence (req/res + screenshots):
+- PoC payloads/steps:
+## 3) Exploitation steps
+1) ...
+2) ...
+3) ...
+## 4) Impact assessment
+- CIA impact + overall severity (with reason)
+## 5) Remediation
+- Concrete fixes
+## 6) Disclosure
+- Contact & suggested timeline
+## 7) Attachments
+- files list</pre>
+          </details>
+          <details class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 text-sm text-slate-200">
+            <summary class="cursor-pointer text-lg font-semibold text-white">TA Checklist</summary>
+            <ul class="mt-4 space-y-2">
+              <li>Verify report matches template structure.</li>
+              <li>Score each rubric criterion and note evidence.</li>
+              <li>Return feedback within 5 business days.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Submission</h2>
+        <p class="mt-4 text-sm text-slate-300">
+          Package your PDF report and evidence folder into a ZIP. Upload via the <a class="text-cyan-300 hover:text-cyan-200" href="/submit/index.html">Submission page</a> or email <a class="text-cyan-300 hover:text-cyan-200" href="mailto:hu-cyber@hebron.edu">hu-cyber@hebron.edu</a> with subject line <em>Capstone Submission — [Your Name]</em>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500">
+        <p>© <span id="current-year"></span> HU Cybersecurity Community — University of Hebron</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>
