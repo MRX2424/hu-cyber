@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ethics and responsible disclosure guidelines for HU Cybersecurity Web Academy." />
+    <title>Ethics & Responsible Disclosure | HU Cybersecurity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      integrity="sha384-hsuS/fWznuaCG2lLBVmOAXoJ1i8LJIYurx8WcN6i/K3PaY5E9O+V1YxDCEV4VpWw"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <a class="text-lg font-semibold tracking-wide" href="/">HU Cybersecurity</a>
+          <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a class="hover:text-cyan-300 transition" href="/tracks/index.html">Tracks</a>
+            <a class="hover:text-cyan-300 transition" href="/capstone/index.html">Capstone</a>
+            <a class="hover:text-cyan-300 transition" href="/submit/index.html">Submit</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <header>
+        <p class="text-xs uppercase tracking-wide text-cyan-300">Ethics</p>
+        <h1 class="mt-3 text-4xl font-bold text-white">Responsible Disclosure &amp; Conduct</h1>
+        <p class="mt-4 text-lg text-slate-300">Pentesting skills require trust. Follow these principles to protect real users and maintain access to training platforms.</p>
+      </header>
+
+      <section class="mt-12 grid gap-6 md:grid-cols-2 text-sm text-slate-300">
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+          <h2 class="text-lg font-semibold text-white">Do</h2>
+          <ul class="mt-3 space-y-2">
+            <li>Test only approved labs and ranges.</li>
+            <li>Respect authentication boundaries.</li>
+            <li>Document steps and impact carefully.</li>
+            <li>Report findings promptly to mentors.</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+          <h2 class="text-lg font-semibold text-white">Don't</h2>
+          <ul class="mt-3 space-y-2">
+            <li>Attack production systems or classmates.</li>
+            <li>Exfiltrate, modify, or destroy data.</li>
+            <li>Share lab credentials publicly.</li>
+            <li>Bypass mentor instructions or ROE.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Disclosure Template</h2>
+        <div class="mt-4 rounded-3xl border border-slate-800 bg-slate-900/70 p-6 text-sm text-slate-200">
+          <p class="font-semibold text-white">Subject: Responsible Disclosure — [Finding] on [Target]</p>
+          <p class="mt-3">Hello [Contact Name],</p>
+          <p class="mt-2">I am a student with the HU Cybersecurity Web Academy. During an authorized assessment on [date], I identified [finding summary]. The vulnerable endpoint is [URL]. I have enclosed proof-of-concept details and recommended fixes.</p>
+          <p class="mt-2">Please let me know how I can support remediation. I will follow your disclosure timeline and keep all details confidential until resolved.</p>
+          <p class="mt-2">Best regards,<br />[Your Name]<br />[Email]</p>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold text-white">Mini Ethics Quiz</h2>
+        <form class="mt-6 space-y-4" data-mini-check>
+          <label class="block rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm text-slate-200">
+            Is it acceptable to continue testing after discovering sensitive customer data?
+            <select class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none" data-answer="no">
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+          <label class="block rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm text-slate-200">
+            Responsible disclosure requires who to be informed first?
+            <input class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none" type="text" placeholder="Stakeholder" data-answer="vendor" />
+          </label>
+          <div class="hidden rounded-2xl border border-cyan-500/40 bg-cyan-500/10 p-4 text-sm text-cyan-100" data-mini-feedback></div>
+          <button class="inline-flex items-center rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400" type="submit">Check answers</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500">
+        <p>© <span id="current-year"></span> HU Cybersecurity Community — University of Hebron</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Networking Level 1 lesson introducing Burp Suite proxy." />
+    <title>Lesson · Burp Proxy Intro | HU Cybersecurity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      integrity="sha384-hsuS/fWznuaCG2lLBVmOAXoJ1i8LJIYurx8WcN6i/K3PaY5E9O+V1YxDCEV4VpWw"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <a class="text-lg font-semibold tracking-wide" href="/">HU Cybersecurity</a>
+          <nav class="hidden md:flex space-x-6 text-sm font-medium">
+            <a class="hover:text-cyan-300 transition" href="/tracks/networking/index.html">Networking Track</a>
+            <a class="hover:text-cyan-300 transition" href="/lab/networking/l1/http-basics/index.html">Lab</a>
+            <a class="hover:text-cyan-300 transition" href="/quiz/networking/l1/index.html">Quiz</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <header>
+          <p class="text-xs uppercase tracking-wide text-cyan-300">Networking · Level 1 · 20–30m</p>
+          <h1 class="mt-3 text-4xl font-bold text-white">Burp Suite Proxy Fundamentals</h1>
+          <p class="mt-4 text-lg text-slate-300">Configure interception, scope traffic, and replay requests with Burp Suite Community Edition.</p>
+        </header>
+
+        <section class="mt-12">
+          <h2 class="text-2xl font-semibold text-white">Objectives</h2>
+          <ul class="mt-4 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Install Burp CA certificate in Firefox.</li>
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Configure proxy listener and browser settings.</li>
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Intercept and forward traffic safely.</li>
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Send requests to Repeater for modification.</li>
+          </ul>
+        </section>
+
+        <section class="mt-12">
+          <h2 class="text-2xl font-semibold text-white">Overview</h2>
+          <p class="mt-4 text-sm leading-relaxed text-slate-300">
+            Burp Suite sits between your browser and the target application, allowing you to observe and modify requests on the fly. Proper setup ensures encrypted traffic is decrypted ethically within your local environment. You will configure certificates, define target scope, and practice forwarding vs. dropping requests to maintain control while testing.
+          </p>
+        </section>
+
+        <section class="mt-12">
+          <h2 class="text-2xl font-semibold text-white">Demo steps</h2>
+          <ol class="mt-4 space-y-4 text-sm text-slate-300">
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Launch Burp Suite → Proxy → Options → Confirm listener on 127.0.0.1:8080.</li>
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">In Firefox, set manual proxy to 127.0.0.1 port 8080 and import Burp certificate from <code class="rounded bg-slate-800 px-2 py-1 text-cyan-300">http://burp</code>.</li>
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Visit an allowed lab URL, observe interception, toggle intercept off, and send copies to Repeater.</li>
+            <li class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">Use Target → Scope to restrict to lab hostname and avoid capturing unrelated traffic.</li>
+          </ol>
+        </section>
+
+        <section class="mt-12">
+          <h2 class="text-2xl font-semibold text-white">Mini-check</h2>
+          <form class="mt-6 space-y-4" data-mini-check>
+            <label class="block rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm text-slate-200">
+              Which tab lets you define what hosts Burp should capture?
+              <input class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none" type="text" data-answer="target" />
+            </label>
+            <label class="block rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm text-slate-200">
+              True or False: You must disable intercept to browse normally after setup.
+              <select class="mt-2 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none" data-answer="true">
+                <option value="">Select</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+              </select>
+            </label>
+            <div class="hidden rounded-2xl border border-cyan-500/40 bg-cyan-500/10 p-4 text-sm text-cyan-100" data-mini-feedback></div>
+            <button class="inline-flex items-center rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400" type="submit">Check answers</button>
+          </form>
+        </section>
+
+        <aside class="mt-12 rounded-3xl border border-emerald-400/40 bg-emerald-400/10 p-6 text-sm text-emerald-100">
+          <p class="font-semibold text-emerald-200">Tip:</p>
+          <p class="mt-2">Create separate Burp projects per lab to keep history and scope tidy for reporting.</p>
+        </aside>
+      </article>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500">
+        <p>© <span id="current-year"></span> HU Cybersecurity Community — University of Hebron</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>
